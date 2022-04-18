@@ -99,3 +99,19 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias cls='clear'
+alias ll='ls -l'
+alias la='ls -a'
+alias vi='vim'
+alias grep="grep --color=auto"
+alias -s py=vi       # 在命令行直接输入 python 文件，会用 vim 中打开，以下类似
+alias -s js=vi
+alias -s c=vi
+alias -s cpp=vi
+alias -s txt=vi
+alias -s s=vi
+alias -s gz='tar -xzvf'
+alias -s tgz='tar -xzvf'
+alias -s zip='unzip'
+alias -s bz2='tar -xjvf'
+eval  "$(lua $HOME/.dotfiles/z.lua/z.lua --init zsh once enhanced)"
