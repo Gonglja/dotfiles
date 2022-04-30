@@ -15,7 +15,7 @@ git submodule update
 创建软链
 
 ```shell
-ln -s .dotfiles/zsh/.zshrc .zshrc
+ln -s .dotfiles/zsh/.zshrc  ~/.zshrc
 ```
 
 
@@ -28,7 +28,7 @@ ln -s .dotfiles/zsh/.zshrc .zshrc
 sudo apt install lua5.4
 ```
 
-然后`vim ~/dotfiles/.zshrc`，最后一行添加即可
+然后`vim ~/dotfiles/zsh/.zshrc`，最后一行添加即可
 
 ```shell
 eval "$(lua $HOME/.dotfiles/z.lua/z.lua  --init zsh once enhanced)"
@@ -41,7 +41,13 @@ eval "$(lua $HOME/.dotfiles/z.lua/z.lua  --init zsh once enhanced)"
 ## tmux 配置
 
 ```shell
-ln -sf ~/.dotfiles/tmux/.tmux.conf .tmux.conf
-ln -sf ~/.dotfiles/tmux/.tmux.conf.local .tmux.conf.local
+ln -sf ~/.dotfiles/.tmux/.tmux.conf  ~/.tmux.conf
+ln -sf ~/.dotfiles/.tmux/.tmux.conf.local ~/.tmux.conf.local
 ```
 
+
+
+## 参考
+
+1. [zsh & oh-my-zsh 的配置与使用](https://zhuanlan.zhihu.com/p/58073103)
+2. [git submodule 使用小结](https://www.jianshu.com/p/f8a55b972972/)
