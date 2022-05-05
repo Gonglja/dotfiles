@@ -80,3 +80,4 @@ ln -sf ~/.dotfiles/.tmux/.tmux.conf.local ~/.tmux.conf.local
 
 1. [zsh & oh-my-zsh 的配置与使用](https://zhuanlan.zhihu.com/p/58073103)
 2. [git submodule 使用小结](https://www.jianshu.com/p/f8a55b972972/)
+3. [终极 Shell——ZSH](https://zhuanlan.zhihu.com/p/19556676)
