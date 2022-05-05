@@ -3,7 +3,9 @@
 下载到`~`目录
 
 ```shell
+cd  ~
 git clone https://github.com/Gonglja/dotfiles.git .dotfiles
+cd  ~/.dotfiles
 git submodule init 
 git submodule update 
 ```
@@ -12,10 +14,16 @@ git submodule update
 
 ## zsh
 
+安装zsh
+```shell
+sudo apt install zsh
+chsh -s /bin/zsh
+```
+
 创建软链
 
 ```shell
-ln -s .dotfiles/zsh/.zshrc  ~/.zshrc
+ln -s ~/.dotfiles/zsh/.zshrc  ~/.zshrc
 ```
 
 
