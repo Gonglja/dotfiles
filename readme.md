@@ -28,6 +28,27 @@ ln -s ~/.dotfiles/zsh/.zshrc  ~/.zshrc
 
 
 
+添加alias
+
+```shell
+alias cls='clear'
+alias ll='ls -l'
+alias la='ls -a'
+alias vi='vim'
+alias grep="grep --color=auto"
+alias -s py=vi       # 在命令行直接输入 python 文件，会用 vim 中打开，以下类似
+alias -s js=vi
+alias -s c=vi
+alias -s cpp=vi
+alias -s txt=vi
+alias -s gz='tar -xzvf'
+alias -s tgz='tar -xzvf'
+alias -s zip='unzip'
+alias -s bz2='tar -xjvf'
+```
+
+
+
 ## z.lua 配置
 
 对于ubuntu，直接apt命令安装最新版本lua
