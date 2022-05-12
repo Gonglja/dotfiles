@@ -76,8 +76,55 @@ ln -sf ~/.dotfiles/.tmux/.tmux.conf.local ~/.tmux.conf.local
 
 
 
+## gdb 配置
+
+### pwndbg插件使用
+
+#### 安装必要软件包
+
+```shell
+sudo apt update 
+sudo apt-get install -y git gdb python3-dev python3-pip python3-setuptools libglib2.0-dev libc6-dbg
+
+sudo dpkg --add-architecture i386
+sudo apt-get update
+sudo apt-get install -y libc6-dbg:i386
+```
+
+
+
+#### 安装python包
+
+```shell
+# 更新pip工具
+python3 -m pip install --upgrade pip
+
+# 验证是否安装 
+pip -V 
+
+# 首先换源
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+# 安装依赖，使用上面换源或者临时使用清华镜像源
+cd ~/.dotfiles/pwndbg
+python3.10 -m pip install -Ur requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+
+
+#### 创建软链
+
+```shell
+ln -s   ~/.dotfiles/gdbinit  ~/.gdbinit
+```
+
+之后输入`gdb`即可享用~
+
+
+
 ## 参考
 
 1. [zsh & oh-my-zsh 的配置与使用](https://zhuanlan.zhihu.com/p/58073103)
 2. [git submodule 使用小结](https://www.jianshu.com/p/f8a55b972972/)
 3. [终极 Shell——ZSH](https://zhuanlan.zhihu.com/p/19556676)
+4. [pwndbg中的setup.sh](https://github.com/pwndbg/pwndbg/blob/dev/setup.sh)
