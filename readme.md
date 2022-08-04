@@ -57,7 +57,7 @@ alias -s bz2='tar -xjvf'
 sudo apt install lua5.4
 ```
 
-然后`vim ~/dotfiles/zsh/.zshrc`，最后一行添加即可
+然后`vim ~/.dotfiles/zsh/.zshrc`，最后一行添加即可
 
 ```shell
 eval "$(lua $HOME/.dotfiles/z.lua/z.lua  --init zsh once enhanced)"
