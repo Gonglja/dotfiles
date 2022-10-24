@@ -10,7 +10,13 @@ git submodule init
 git submodule update 
 ```
 
+## submodule update
 
+```shell
+git submodule sync --remote
+git add .
+git commit -m "Updata"
+```
 
 ## zsh
 
