@@ -114,5 +114,10 @@ alias -s gz='tar -xzvf'
 alias -s tgz='tar -xzvf'
 alias -s zip='unzip'
 alias -s bz2='tar -xjvf'
+alias setpr="export http_proxy=127.0.0.1:20171;export https_proxy=127.0.0.1:20171"
+alias unsetpr="unset http_proxy; unset https_proxy"
+alias testpr="curl www.google.com"
 
 eval "$(lua $HOME/.dotfiles/z.lua/z.lua  --init zsh once enhanced)"
+# export DEBUGINFOD_URLS="https://debuginfod.archlinux.org"
+
